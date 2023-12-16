@@ -1,12 +1,15 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Nanum+Gothic&display=swap');
 
 /* Navbar */
 .navbar{
-    background-color: #10674e;
+    background-color: #033023;
     padding: 1.5rem;
 }
 
@@ -20,7 +23,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:space-between
+    justify-content:space-around;
 }
 
 
@@ -34,6 +37,29 @@
     border-radius: 0.5rem;
     color: rgb(213, 255, 151);
     transition: 0.4s;
+}
+
+.test_nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.test_nav_btn{
+    display: flex;
+    background-color: rgb(213, 255, 151);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: #10674e;
+    padding: 0.7rem;
+    transition: 0.4s;
+}
+
+.test_nav_btn:hover{
+    color: black;
+    background-color: white;
 }
 
 
@@ -68,10 +94,6 @@
     color: white;
 }
 
-.register:visited, .register:link{
-    text-decoration: none;
-}
-
 .login{
     margin-left: 1rem;
     padding: 0.5rem;
@@ -81,7 +103,7 @@
     transition: 0.4s;
 }
 
-.login:visited, .login:link{
+a:visited, a:link{
     text-decoration: none;
 }
 
@@ -113,7 +135,7 @@
 footer{
     display: flex;
     align-items: center;
-    background-color: #10674e;
+    background-color: #033023;
     width: 100%;
     height: 50px;
     /*position: relative;*/
@@ -125,7 +147,7 @@ footer{
 /* Content */
 
 .initial_content{
-    background-color: #10674e;
+    background-color: #033023;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -135,17 +157,18 @@ footer{
 
 .initial_content_title{
     font-size: 40px;
-    color: #021d16;
+
+    color: white;
     cursor: pointer;
     transition: 0.4s;
 }
 .initial_content_title:hover {
     font-size: 45px;
-    color: white;
+    color: yellow;
 }
 
 .initial_content_subtitle{
-    color: white;
+    color: rgb(213, 255, 151);
     font-size: 18px;
     cursor: pointer;
     transition: 0.4s; 
@@ -155,23 +178,6 @@ footer{
 
 }
 
-.initial_content_btn{
-    background-color: rgb(213, 255, 151);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    border-radius: 0.5rem;
-    color: #10674e;
-    margin-top: 2rem;
-    padding: 0.7rem;
-    transition: 0.4s;
-}
-
-.initial_content_btn:hover{
-    background-color: white;
-    color: black;
-    font-size: 1.1rem;
-}
 
 .prominence{
     display: flex;
@@ -179,3 +185,46 @@ footer{
     align-items: center;
    
 }
+
+/* Aba de Calculos*/
+
+.avaliable_calculus{
+    display: flex;
+    flex-direction: row;
+}
+
+.ea_calculus{
+    background-color: rgb(213, 255, 151);
+    margin: 1rem;
+    width: 31.25rem;
+    height: 31.25rem;
+    border-radius: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.lost_charge{
+    cursor: pointer;
+    margin: 1rem;
+    width: 31.25rem;
+    height: 31.25rem;
+    background-color: rgb(213, 255, 151);
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.bombs_calculus{
+    cursor: pointer;
+    margin: 1rem;
+    width: 31.25rem;
+    height: 31.25rem;
+    background-color: rgb(213, 255, 151);
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.ea_calculus:hover, .bombs_calculus:hover, .lost_charge:hover{
+    width: 32rem;
+    height: 32rem;
+}
+
